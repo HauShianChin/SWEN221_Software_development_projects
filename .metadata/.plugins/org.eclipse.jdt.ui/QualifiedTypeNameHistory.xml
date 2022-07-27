@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="snakefall.events.SnakeMove"/>
+<fullyQualifiedTypeName name="snakefall.tiles.Tile"/>
+<fullyQualifiedTypeName name="snakefall.tiles.TargetTile"/>
+<fullyQualifiedTypeName name="snakefall.io.Parser"/>
+<fullyQualifiedTypeName name="snakefall.events.GameOver"/>
+<fullyQualifiedTypeName name="snakefall.io.GameError"/>
+<fullyQualifiedTypeName name="swen221.chessview.moves.Check"/>
+<fullyQualifiedTypeName name="swen221.connect.core.Board.Token"/>
+<fullyQualifiedTypeName name="swen221.connect.rules.CaptureRule"/>
+<fullyQualifiedTypeName name="swen221.cards.util.AbstractCardGame"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.text.DateFormat.Field"/>
+<fullyQualifiedTypeName name="swen221.cards.core.Hand"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="swen221.cards.core.Card.Suit"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.reflect.InvocationTargetException"/>
+</qualifiedTypeNameHistroy>

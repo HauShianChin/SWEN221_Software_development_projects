@@ -1,0 +1,44 @@
+package swen221.lambda.exceptionHandler2;
+
+import java.lang.reflect.InvocationTargetException;
+import java.rmi.UnexpectedException;
+
+public class ReflectionHelper {
+	public static interface SupplierWithException<T> {
+		/*FIXME you may want to change code here*/
+		
+		T get() throws Throwable;
+	}
+
+	public static <T> T tryCatch(SupplierWithException<T> s) {
+		/*FIXME add here the try-catching logic as from the text*/ 
+		try {
+			return s.get(); 
+		}
+		catch (NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			throw new Error("No such method exception", e);
+		}
+		catch (IllegalAccessException e) {
+			throw new Error("illegal access exception", e); 
+		}  
+		catch (InvocationTargetException e) {
+			Throwable errorCause = e.getCause();
+			if(errorCause instanceof Error) {
+				throw (Error) errorCause;
+			}
+			if(errorCause instanceof RuntimeException) {
+				throw (RuntimeException) errorCause;
+			}
+			if(errorCause instanceof UnexpectedException) {
+				throw new Error("Unexpected Exception", e); 
+			}
+			throw new Error("Unexpected checked exception", errorCause); 
+		}
+
+		catch (Throwable throwable) {
+			throwable.printStackTrace(); 
+		}
+		return null; 
+	}
+}
